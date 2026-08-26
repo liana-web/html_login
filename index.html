@@ -5,35 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html { 
+            scroll-behavior:smooth;
+            scroll-padding-top: 100px;
+        }
+    </style>    
 </head>
 
 <body>
     <div class="wrapper">
         <nav class="navbar">
             <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+                <li><a href="#skills"><i class="fa-solid fa-gear"></i> Tools & Technologies</a></li>
+                <li><a href="#socials"><i class="fa fa-address-book" aria-hidden="true"></i> Socials</a></li>
             </ul>
         </nav>
 
         <section id="home" class="hero-content">
             <div class="about-me">
                 <h1>Hello, I'm Juliana Ritz Magat</h1>
-                <p>Aspiring software enginneer from the philippines</p>
+                <p>Aspiring software enginneer from the Philippines</p>
             </div>
+            <!-- <div class="profile-picture">
+                <img src="img/profile.jpg" alt="profilepicture">
+            </div> -->
             <div class="profile-picture">
-                <img src="img/profile-pic.jpg" alt="profilepicture">
+                <img src="img/profile.jpg" alt="profilepicture" class="img-primary">
+                <img src="img/profile2.jpg" alt="profilepicture hover" class="img-secondary">
             </div>
         </section>
 
         <section id="about" class="about-section">
             <h1>About</h1>
-            <p>Aspiring software enginneer from Saint Cecilia's College in Minglanilla. Taking Bachelor of Science in Information Technology. I'm originally from Moalboal Cebu. My hobbies are traveling, music, food trip, food cooking and most of all, I love freediving.</p>
+            <p>Aspiring software enginneer from Saint Cecilia's College in Minglanilla. Taking Bachelor of Science in Information Technology. I'm originally from Moalboal Cebu. My hobbies are traveling, music, food trip and most of all, I love freediving.</p>
         </section>
-        <section id="contact" class="contact-section">
+        <section id="skills" class="skills-section">
+            <h1>Tools and Technologies</h1>
+            <div class="social-grid">
+                <a class="social-card card-github">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML</span>
+                </a>
+
+                <a class="social-card card-github">
+                <i class="fa-brands fa-css3"></i>
+                <span>CSS</span>
+                </a>
+
+                <a class="social-card card-github">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+                </a>
+
+                <a class="social-card card-github">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+                </a>
+
+                <a class="social-card card-github">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+                </a>
+                
+                <a class="social-card card-github">
+                <i class="fa-brands fa-git"></i>
+                <span>Git</span>
+                </a>
+            </div>
+        </section>
+        <section id="socials" class="socials-section">
             <h1>Socials</h1>
             <div class="social-grid">
                 <a href="https://www.facebook.com/julianaritz.a.magat" target="_blank" class="social-card card-facebook">
